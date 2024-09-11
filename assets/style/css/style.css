@@ -86,15 +86,19 @@ body {
     .nav-bar {
         padding: 1.5rem 4rem;
     }
+
     .nav-item {
         display: none;
     }
+    
     .login-button {
         display: none;
     }
+
     .mobile-menu-icon {
         display: block;
     }
+
     .mobile-menu-icon button {
         background-color: transparent;
         color: white;
@@ -102,23 +106,37 @@ body {
         border: none;
         cursor: pointer;
     }
+
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
+
     .mobile-menu .nav-item {
-        display: block;
+        display: inline-block;
         padding-top: 1.2rem;
     }
+
+    .mobile-menu .nav-item:hover {
+        transform: scale(1.5);
+        transition: .2s;
+    }
+
     .mobile-menu .login-button {
         display: block;
         padding: 1rem 2rem;
     }
+
+    .mobile-menu .nav-link:hover {
+        color: white;
+    }
+
     .mobile-menu .login-button button {
         width: 100%;
     }
+
     .open {
         display: block;
     }
