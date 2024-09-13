@@ -48,7 +48,7 @@ body {
 
 .nav-list a:hover {
     color: white;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 /* BUTTON */
@@ -120,7 +120,7 @@ body {
     }
 
     .mobile-menu .nav-item:hover {
-        transform: scale(1.5);
+        transform: scale(1.2);
         transition: .2s;
     }
 
@@ -139,5 +139,28 @@ body {
 
     .open {
         display: block;
+    }
+}
+
+/* TOPO SITE */
+.flex {
+    display: flex;
+}
+.topo-site .img-topo-site img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid #00ff08;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
     }
 }
